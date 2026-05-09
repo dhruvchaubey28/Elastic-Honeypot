@@ -1,0 +1,32 @@
+2026-05-09 12:22:35,932 [INFO] __main__: ✅ PostgreSQL pool ready
+2026-05-09 12:22:35,933 [INFO] __main__: 🍯 Delilah Honeypot started on port 9200
+2026-05-09 12:22:35,933 [INFO] __main__: 📊 Geo cache TTL: 3600s
+2026-05-09 12:22:35,933 [INFO] __main__: ⚠️  Email alerts: enabled
+2026-05-09 12:27:35,135 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:35,145 [INFO] tornado.access: 200 GET / (192.168.65.1) 3020.98ms
+2026-05-09 12:27:38,203 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:38,209 [INFO] tornado.access: 200 GET /favicon.ico (192.168.65.1) 3011.75ms
+2026-05-09 12:27:39,439 [INFO] __main__: 📧 Alert sent for 192.168.65.1
+2026-05-09 12:27:40,190 [INFO] tornado.access: 200 GET /login (192.168.65.1) 0.94ms
+2026-05-09 12:27:43,197 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:43,221 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:43,224 [INFO] tornado.access: 304 GET /favicon.ico (192.168.65.1) 3006.65ms
+2026-05-09 12:27:48,549 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:51,566 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:51,571 [INFO] __main__: 🔑 Credentials harvested: admin / *** from 192.168.65.1
+2026-05-09 12:27:51,572 [INFO] tornado.access: 200 POST /login (192.168.65.1) 6030.61ms
+2026-05-09 12:27:54,605 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 12:27:54,610 [INFO] tornado.access: 304 GET /favicon.ico (192.168.65.1) 3010.45ms
+2026-05-09 13:02:02,869 [INFO] blocklist: 🚫 Blocklist ready — 0 IPs currently blocked
+2026-05-09 13:02:02,870 [INFO] __main__: ✅ PostgreSQL pool ready
+2026-05-09 13:02:02,871 [INFO] __main__: 🍯 Delilah Honeypot on :9200
+2026-05-09 13:02:02,871 [INFO] __main__: 🚫 Block threshold: 10 hits/60s
+2026-05-09 13:02:02,871 [INFO] __main__: 📈 Prometheus metrics at /metrics
+2026-05-09 13:02:02,872 [INFO] __main__: ⚠️  Email alerts: enabled
+2026-05-09 13:02:12,198 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 13:02:12,206 [INFO] tornado.access: 304 GET / (192.168.65.1) 3019.46ms
+2026-05-09 13:02:15,211 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 13:02:15,215 [INFO] tornado.access: 304 GET / (192.168.65.1) 3007.30ms
+2026-05-09 13:02:15,253 [WARNING] __main__: [GEO FAILED] 192.168.65.1: Timeout while connecting
+2026-05-09 13:02:15,258 [INFO] tornado.access: 200 GET /favicon.ico (192.168.65.1) 3008.79ms
+2026-05-09 13:02:16,702 [INFO] __main__: 📧 Alert sent for 192.168.65.1

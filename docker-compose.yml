@@ -1,0 +1,56 @@
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: delilah-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: delilah
+      POSTGRES_PASSWORD: delilah
+      POSTGRES_DB: honeypot
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"           # remove this line in production
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U delilah -d honeypot"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  honeypot:
+    build: .
+    container_name: delilah-honeypot
+    restart: unless-stopped
+    command: python honeypot.py
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://delilah:delilah@postgres:5432/honeypot
+      PORT: 9200
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  monitor:
+    build: .
+    container_name: delilah-monitor
+    restart: unless-stopped
+    command: python monitor.py
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://delilah:delilah@postgres:5432/honeypot
+      PORT: 8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:

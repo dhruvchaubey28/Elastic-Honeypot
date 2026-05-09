@@ -1,0 +1,13 @@
+{"ts": "2026-05-09T13:02:02", "level": "INFO", "name": "blocklist", "msg": "\ud83d\udeab Blocklist ready \u2014 0 IPs currently blocked"}
+{"ts": "2026-05-09T13:02:02", "level": "INFO", "name": "__main__", "msg": "\u2705 PostgreSQL pool ready"}
+{"ts": "2026-05-09T13:02:02", "level": "INFO", "name": "__main__", "msg": "\ud83c\udf6f Delilah Honeypot on :9200"}
+{"ts": "2026-05-09T13:02:02", "level": "INFO", "name": "__main__", "msg": "\ud83d\udeab Block threshold: 10 hits/60s"}
+{"ts": "2026-05-09T13:02:02", "level": "INFO", "name": "__main__", "msg": "\ud83d\udcc8 Prometheus metrics at /metrics"}
+{"ts": "2026-05-09T13:02:02", "level": "INFO", "name": "__main__", "msg": "\u26a0\ufe0f  Email alerts: enabled"}
+{"ts": "2026-05-09T13:02:12", "level": "WARNING", "name": "__main__", "msg": "[GEO FAILED] 192.168.65.1: Timeout while connecting"}
+{"ts": "2026-05-09T13:02:12", "level": "INFO", "name": "tornado.access", "msg": "304 GET / (192.168.65.1) 3019.46ms"}
+{"ts": "2026-05-09T13:02:15", "level": "WARNING", "name": "__main__", "msg": "[GEO FAILED] 192.168.65.1: Timeout while connecting"}
+{"ts": "2026-05-09T13:02:15", "level": "INFO", "name": "tornado.access", "msg": "304 GET / (192.168.65.1) 3007.30ms"}
+{"ts": "2026-05-09T13:02:15", "level": "WARNING", "name": "__main__", "msg": "[GEO FAILED] 192.168.65.1: Timeout while connecting"}
+{"ts": "2026-05-09T13:02:15", "level": "INFO", "name": "tornado.access", "msg": "200 GET /favicon.ico (192.168.65.1) 3008.79ms"}
+{"ts": "2026-05-09T13:02:16", "level": "INFO", "name": "__main__", "msg": "\ud83d\udce7 Alert sent for 192.168.65.1"}
